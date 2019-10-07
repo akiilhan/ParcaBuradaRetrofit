@@ -5,7 +5,7 @@ import retrofit2.converter.gson.GsonConverterFactory
 
 object ApiClient {
 
-    val BASE_URL = "https://www.parcaburada.com/welcome/"
+    val BASE_URL = "https://www.parcaburada.com/welcome/arac_detay_getir_model/"
     private var retrofit: Retrofit? = null
     val client: Retrofit?
         get() {

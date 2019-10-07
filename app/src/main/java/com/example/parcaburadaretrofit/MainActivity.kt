@@ -11,7 +11,7 @@ import retrofit2.create
 class MainActivity : AppCompatActivity() {
 
 
-    //val MODEL_ID="24"
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -27,8 +27,8 @@ Log.e("hata",""+t?.printStackTrace())            }
             ) {
                 Log.e("başarılı",call?.request().url()?.toString())
                 var gelenData=response?.body()
-                //for (i in 0..response?.body()?.size!!-1)
-                    Log.e("başarılı",""+response?.body()?.get(0)?.model.toString())
+                for (i in 0..response?.body()?.size!!-1)
+                    Log.e("başarılı",""+response?.body()?.get(i)?.model.toString())
 
 
 
